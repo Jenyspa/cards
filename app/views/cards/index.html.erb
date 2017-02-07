@@ -1,0 +1,7 @@
+<h1> Todos os cards </h1>
+
+<% @cards.each do |card| %>
+<%= link_to card.portuguese, card %>
+<%end%>
+
+<%= link_to 'criar card', new_card_path %>

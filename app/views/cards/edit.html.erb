@@ -1,0 +1,15 @@
+<h1> Editar Card </h1>
+
+<%= form_for @card do |f| %>
+  <div>
+    <%= f.label :portuguese %>
+    <%= f.text_field :portuguese %>
+  </div>
+  <div>
+    <%= f.label :english %>
+    <%= f.text_field :english %>
+  </div>
+  <div>
+    <%= f.submit 'Atualizar'%>
+  </div>
+<% end %>
